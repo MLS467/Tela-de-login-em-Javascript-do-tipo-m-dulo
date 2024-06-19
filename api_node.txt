@@ -25,6 +25,7 @@ const server = http.createServer((req, res) => {
         senha: senha,
         status: 200,
         nome: "Maisson",
+        logado: true,
       }),
     );
   } else {
@@ -33,6 +34,7 @@ const server = http.createServer((req, res) => {
       JSON.stringify({
         resposta: "Não autorizado",
         status: 401,
+        logado: false,
       }),
     );
   }
