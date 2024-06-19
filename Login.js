@@ -1,4 +1,4 @@
-export class Login {
+class Login {
     static logado = false;
     static matlogado = null;
     static nomeLogado = null;
@@ -29,8 +29,8 @@ export class Login {
             #elementosLogin { background-color:${this.config.cor}; display: flex; justify-content: center; align-items: inherit; flex-direction: column; padding: 15px; width: 30%; border-top-left-radius: 5px; border-bottom-left-radius: 5px; }
             .camposLogin { margin-bottom: 25px; display: flex; justify-content: center; align-items: start; flex-direction: column; width: 100%; }
             .camposLogin input { padding: 5px; width: 100%; border-radius: 5px; border: 1px solid #eee; background-color: #fff; }
-            #logoLogin { border-top-right-radius: 5px; border-bottom-right-radius: 5px; display: flex; justify-content: center; align-items: center; }
-            #logoLogin img { border-top-right-radius: inherit; border-bottom-right-radius: inherit; width: 250px; height: inherit; }
+            #logoLogin { border-top-right-radius: 5px; border-bottom-right-radius: 5px; display: flex; justify-content: center; align-items: stretch; height:inherit }
+            #logoLogin img { background-color:white;border-top-right-radius: inherit; border-bottom-right-radius: inherit; width: 100%; height: inherit; display:flex; justify-content: center; align-items: center;}
             .botoesLogin { width: 100%; display: flex; justify-content: center; align-items: center; }
             .botoesLogin button { margin-left: 15px; width: 30%; height: 40px; border: none; border-radius: 5px; background-color: #007bff; color: white; cursor: pointer; font-size: 15px; }
             `;
@@ -154,4 +154,5 @@ export class Login {
     }
 }
 
+// export {Login}
 
