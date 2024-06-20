@@ -117,17 +117,17 @@ class Login {
                 .then(res => res.json())
                 .then((res) => {
                     if (res.logado) {
-                        sessionStorage("nomeLogado", res.nome)
-                        sessionStorage("acessoLogado", res.senha)
-                        sessionStorage("logado ", res.logado)
+                        sessionStorage.setItem("nomeLogado", res.nome);
+                        sessionStorage.setItem("acessoLogado", res.senha);
+                        sessionStorage.setItem("logado", res.logado);
 
                         this.mostraDados();
                         this.callbackOk();
 
                     } else if (!res.logado) {
-                        sessionStorage("nomeLogado", null);
-                        sessionStorage("acessoLogado", null);
-                        sessionStorage("logado ", res.logado);
+                        sessionStorage.setItem("nomeLogado", null);
+                        sessionStorage.setItem("acessoLogado", null);
+                        sessionStorage.setItem("logado ", res.logado);
 
                         this.callbackNaoOk();
                     }
